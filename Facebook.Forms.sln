@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.iOS", "Test\Test.iOS\T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test\Test.csproj", "{1ADD4202-E8A4-4257-A223-F3E850B78C45}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{56D818CA-18F2-4EF6-A2CC-60363AC5BF80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -108,6 +110,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80D40844-AFE7-4803-8F8A-180B58E4CE7E} = {56D818CA-18F2-4EF6-A2CC-60363AC5BF80}
+		{FD521C50-C870-4772-AAD2-B7CB8344CBE5} = {56D818CA-18F2-4EF6-A2CC-60363AC5BF80}
+		{1ADD4202-E8A4-4257-A223-F3E850B78C45} = {56D818CA-18F2-4EF6-A2CC-60363AC5BF80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BDBEE536-0F6C-414B-9B28-750A9885203D}
