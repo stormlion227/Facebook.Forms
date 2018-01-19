@@ -123,6 +123,16 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\Facebook.Core.Form\Facebook.Core.iOS\Facebook.Core.iOS.csproj">
+      <Project>{6dd5349e-aaef-439f-9f2a-fab725d23f6d}</Project>
+      <Name>Facebook.Core.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Facebook.Core.Form\Facebook.Core\Facebook.Core.csproj">
+      <Project>{574e70f1-b62a-445c-bf57-64f9b1a53315}</Project>
+      <Name>Facebook.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{6839C0C0-CBF4-4686-A884-FCBE0161C37A}</Project>
       <Name>Test</Name>

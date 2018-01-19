@@ -80,6 +80,14 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Facebook.Core.Form\Facebook.Core.Android\Facebook.Core.Android.csproj">
+      <Project>{62643305-b8cc-4436-bc2c-ba53304cae85}</Project>
+      <Name>Facebook.Core.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Facebook.Core.Form\Facebook.Core\Facebook.Core.csproj">
+      <Project>{574e70f1-b62a-445c-bf57-64f9b1a53315}</Project>
+      <Name>Facebook.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{6839C0C0-CBF4-4686-A884-FCBE0161C37A}</Project>
       <Name>Test</Name>
