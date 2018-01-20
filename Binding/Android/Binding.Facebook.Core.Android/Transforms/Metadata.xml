@@ -1,0 +1,7 @@
+﻿<metadata>
+  
+  <attr path="/api/package[@name='com.facebook']/class[@name='GraphRequestAsyncTask']/method[@name='doInBackground']" name="managedName">DoInBackground_Invoke</attr>
+
+  <attr path="/api/package[@name='com.facebook']/class[@name='GraphRequestBatch']/method[@name='get']" name="managedName">Get_Invoke</attr>
+  
+</metadata>
