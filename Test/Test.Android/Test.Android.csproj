@@ -28,6 +28,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,12 +52,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Bolts">
+      <Version>1.4.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs">
+      <Version>26.1.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="26.1.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="26.1.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="26.1.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="26.1.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="26.1.0.1" />
+    <PackageReference Include="Xamarin.Google.ZXing.Core">
+      <Version>3.3.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -80,18 +94,33 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Facebook.Core.Form\Facebook.Core.Android\Facebook.Core.Android.csproj">
-      <Project>{62643305-b8cc-4436-bc2c-ba53304cae85}</Project>
-      <Name>Facebook.Core.Android</Name>
+    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Common.Android\Binding.Facebook.Common.Android.csproj">
+      <Project>{1ec932e6-0360-43fa-ac59-4c63a99d239c}</Project>
+      <Name>Binding.Facebook.Common.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Facebook.Core.Form\Facebook.Core\Facebook.Core.csproj">
-      <Project>{574e70f1-b62a-445c-bf57-64f9b1a53315}</Project>
-      <Name>Facebook.Core</Name>
+    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Core.Android\Binding.Facebook.Core.Android.csproj">
+      <Project>{10b245f8-12e7-4246-86e4-54c3e19aa483}</Project>
+      <Name>Binding.Facebook.Core.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Login.Android\Binding.Facebook.Login.Android.csproj">
+      <Project>{85deff88-8880-4b67-93a1-905ebfe60d2f}</Project>
+      <Name>Binding.Facebook.Login.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Facebook.Login.Form\Facebook.Login.Android\Facebook.Login.Android.csproj">
+      <Project>{c0d98491-98ef-4003-9ad6-235447866b19}</Project>
+      <Name>Facebook.Login.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Facebook.Login.Form\Facebook.Login\Facebook.Login.csproj">
+      <Project>{3d67bd88-64a7-47e7-890d-7afff1a5d2b8}</Project>
+      <Name>Facebook.Login</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{6839C0C0-CBF4-4686-A884-FCBE0161C37A}</Project>
       <Name>Test</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

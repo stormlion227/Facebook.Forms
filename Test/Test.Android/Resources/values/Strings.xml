@@ -2,4 +2,7 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">Test.Droid</string>
+  
+  <string name="facebook_app_id">1929161387412785</string>
+  <string name="fb_login_protocol_scheme">fb1929161387412785</string>
 </resources>

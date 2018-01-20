@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Facebook.Core.Form\Facebook.Core\Facebook.Core.csproj" />
+    <ProjectReference Include="..\..\Facebook.Login.Form\Facebook.Login\Facebook.Login.csproj" />
   </ItemGroup>
 
   <ItemGroup>

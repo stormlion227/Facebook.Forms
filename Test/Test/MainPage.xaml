@@ -2,10 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Test"
+             xmlns:fblogin="clr-namespace:Stormlion.Facebook.Login;assembly=Stormlion.Facebook.Login"
              x:Class="Test.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <fblogin:FBLoginButton />
+            <Button Text="UI"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>

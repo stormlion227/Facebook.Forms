@@ -12,8 +12,10 @@
   <attr path="/api/package[@name='com.facebook.login']/interface[@name='StartActivityDelegate']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.facebook.internal']/class[@name='FacebookDialogBase.ModeHandler']" name="visibility">public</attr>
   
-  <attr path="/api/package[@name='com.facebook.login']/class[@name='LoginClient']" name="visibility">public</attr>
+<!--  <attr path="/api/package[@name='com.facebook.login']/class[@name='LoginClient']" name="visibility">public</attr> -->
 
   <remove-node path="/api/package[@name='com.facebook.share']/interface[@name='ShareBuilder']/method[@name='build' and count(parameter)=0]" />
+
+  <remove-node path="/api/package[@name='com.facebook.login']/class[@name='LoginClient']" />
 
 </metadata>
