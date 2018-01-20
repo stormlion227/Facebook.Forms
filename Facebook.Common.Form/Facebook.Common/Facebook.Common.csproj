@@ -6,4 +6,8 @@
     <RootNamespace>Stormlion.Facebook.Common</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+  </ItemGroup>
+
 </Project>
