@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Stormlion.Facebook.Share.Android</id>
+    <version>4.28.0.1</version>
+    <authors>Marko Rothstein</authors>
+    <owners>Marko Rothstein</owners>
+    <projectUrl>https://github.com/stormlion227/Facebook.Forms</projectUrl>
+    <licenseUrl>https://github.com/stormlion227/Facebook.Forms/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Facebook Sharing SDK C# binding for Xamarin</description>
+    <summary>Facebook Sharing SDK C# binding for Xamarin</summary>
+    <copyright>© StormLion 2018</copyright>
+    <dependencies>
+      <group targetFramework="monoandroid">
+        <dependency id="Stormlion.Facebook.Common.Android" version="4.28.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin/Release/Stormlion.Facebook.Share.Android.dll" target="lib/MonoAndroid" />
+  </files>
+</package>
