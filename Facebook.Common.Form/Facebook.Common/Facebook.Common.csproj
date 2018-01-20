@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Stormlion.Facebook.Common</AssemblyName>
+    <RootNamespace>Stormlion.Facebook.Common</RootNamespace>
+  </PropertyGroup>
+
+</Project>
