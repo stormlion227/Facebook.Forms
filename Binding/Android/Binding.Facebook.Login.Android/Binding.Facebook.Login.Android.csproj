@@ -35,6 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bolts.AppLinks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.AppLinks.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolts.Tasks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ZXing.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Xamarin.Google.ZXing.Core.3.3.0\lib\MonoAndroid\Google.ZXing.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -99,6 +108,10 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Binding.Facebook.Common.Android\Binding.Facebook.Common.Android.csproj">
+      <Project>{1ec932e6-0360-43fa-ac59-4c63a99d239c}</Project>
+      <Name>Binding.Facebook.Common.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Binding.Facebook.Core.Android\Binding.Facebook.Core.Android.csproj">
       <Project>{10b245f8-12e7-4246-86e4-54c3e19aa483}</Project>
       <Name>Binding.Facebook.Core.Android</Name>
