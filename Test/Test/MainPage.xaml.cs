@@ -1,4 +1,7 @@
-﻿using Xamarin.Forms;
+﻿using Stormlion.Facebook.Common;
+using System;
+using System.Collections.Generic;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Test
@@ -10,5 +13,10 @@ namespace Test
 		{
 			InitializeComponent();
 		}
+
+        protected void OnLoginClicked(object sender, EventArgs e)
+        {
+            FBLoginManager.LoginWithReadPermissions(new List<string> { "email" });
+        }
 	}
 }

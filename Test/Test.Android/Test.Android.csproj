@@ -55,6 +55,15 @@
     <PackageReference Include="Bolts">
       <Version>1.4.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.CurrentActivity">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Stormlion.Facebook.Common.Android">
+      <Version>4.28.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Stormlion.Facebook.Core.Android">
+      <Version>4.28.0.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.CustomTabs">
       <Version>26.1.0.1</Version>
     </PackageReference>
@@ -70,6 +79,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="MainApplication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -94,25 +104,13 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Common.Android\Binding.Facebook.Common.Android.csproj">
-      <Project>{1ec932e6-0360-43fa-ac59-4c63a99d239c}</Project>
-      <Name>Binding.Facebook.Common.Android</Name>
+    <ProjectReference Include="..\..\Facebook.Common.Form\Facebook.Common.Android\Facebook.Common.Android.csproj">
+      <Project>{342ff3e1-65fe-415d-9d3c-515597c9967e}</Project>
+      <Name>Facebook.Common.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Core.Android\Binding.Facebook.Core.Android.csproj">
-      <Project>{10b245f8-12e7-4246-86e4-54c3e19aa483}</Project>
-      <Name>Binding.Facebook.Core.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Login.Android\Binding.Facebook.Login.Android.csproj">
-      <Project>{85deff88-8880-4b67-93a1-905ebfe60d2f}</Project>
-      <Name>Binding.Facebook.Login.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Facebook.Login.Form\Facebook.Login.Android\Facebook.Login.Android.csproj">
-      <Project>{c0d98491-98ef-4003-9ad6-235447866b19}</Project>
-      <Name>Facebook.Login.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Facebook.Login.Form\Facebook.Login\Facebook.Login.csproj">
-      <Project>{3d67bd88-64a7-47e7-890d-7afff1a5d2b8}</Project>
-      <Name>Facebook.Login</Name>
+    <ProjectReference Include="..\..\Facebook.Common.Form\Facebook.Common\Facebook.Common.csproj">
+      <Project>{386633e7-1617-49a5-b3eb-d50e888440d0}</Project>
+      <Name>Facebook.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{6839C0C0-CBF4-4686-A884-FCBE0161C37A}</Project>

@@ -17,7 +17,7 @@ namespace Test.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            var ignore = new Stormlion.Facebook.Login.Droid.Renderer.FBLoginButtonRenderer(this);
+            Stormlion.Facebook.Common.Droid.Platform.Init();
 
             base.OnCreate(bundle);
 

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Stormlion.Facebook.Core.Android</id>
-    <version>4.28.0.1</version>
+    <version>4.28.0.3</version>
     <authors>Marko Rothstein</authors>
     <owners>Marko Rothstein</owners>
     <projectUrl>https://github.com/stormlion227/Facebook.Forms</projectUrl>
@@ -19,6 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin/Release/Stormlion.Facebook.Core.Android.dll" target="lib/MonoAndroid" />
+    <file src="bin/Release/Stormlion.Facebook.Core.Android.Binding.dll" target="lib/MonoAndroid" />
   </files>
 </package>

@@ -140,18 +140,6 @@
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Common.Android\Binding.Facebook.Common.Android.csproj">
-      <Project>{1ec932e6-0360-43fa-ac59-4c63a99d239c}</Project>
-      <Name>Binding.Facebook.Common.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Core.Android\Binding.Facebook.Core.Android.csproj">
-      <Project>{10b245f8-12e7-4246-86e4-54c3e19aa483}</Project>
-      <Name>Binding.Facebook.Core.Android</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Login.Android\Binding.Facebook.Login.Android.csproj">
-      <Project>{85deff88-8880-4b67-93a1-905ebfe60d2f}</Project>
-      <Name>Binding.Facebook.Login.Android</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Facebook.Login\Facebook.Login.csproj">
       <Project>{3d67bd88-64a7-47e7-890d-7afff1a5d2b8}</Project>
       <Name>Facebook.Login</Name>

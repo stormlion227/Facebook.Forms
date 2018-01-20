@@ -53,6 +53,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
+    <Reference Include="Plugin.CurrentActivity, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.CurrentActivity.1.0.1\lib\MonoAndroid10\Plugin.CurrentActivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.Facebook.Common.Android.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Stormlion.Facebook.Common.Android.4.28.0.3\lib\MonoAndroid\Stormlion.Facebook.Common.Android.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.Facebook.Core.Android.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Stormlion.Facebook.Core.Android.4.28.0.3\lib\MonoAndroid\Stormlion.Facebook.Core.Android.Binding.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -131,11 +140,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FBLoginManagerImplement.cs" />
+    <Compile Include="Platform.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>

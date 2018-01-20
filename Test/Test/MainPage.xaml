@@ -2,13 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Test"
-             xmlns:fblogin="clr-namespace:Stormlion.Facebook.Login;assembly=Stormlion.Facebook.Login"
              x:Class="Test.MainPage">
 
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <fblogin:FBLoginButton />
             <Button Text="UI"
+                    Clicked="OnLoginClicked"
                     />
         </StackLayout>
     </ContentPage.Content>
