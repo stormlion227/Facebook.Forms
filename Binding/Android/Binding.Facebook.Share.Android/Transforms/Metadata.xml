@@ -1,0 +1,6 @@
+﻿<metadata>
+  
+  <remove-node path="/api/package[@name='com.facebook.share.model']/class[@name='AppInviteContent']" /> <!-- obsolute class -->
+  <attr path="/api/package[@name='com.facebook.share.internal']/class[@name='VideoUploader.UploadWorkItemBase']/method[@name='getParameters']" name="visibility">public</attr>
+  
+</metadata>
