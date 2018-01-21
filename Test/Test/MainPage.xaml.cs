@@ -22,6 +22,16 @@ namespace Test
                 Success = () =>
                 {
                     Debug.WriteLine("Success!");
+                    new FBGraphRequest
+                    {
+                        GraphPath = "me",
+                        Method = FBHttpMethod.GET,
+                        Completed = (response) =>
+                        {
+                            Debug.WriteLine("****************************************************************");
+                            Debug.WriteLine(response);
+                        }
+                    }.ExecuteAsync();
                 },
                 Cancel = () =>
                 {

@@ -140,6 +140,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FBAccessTokenImplement.cs" />
+    <Compile Include="FBGraphRequestImplement.cs" />
     <Compile Include="FBLoginManagerImplement.cs" />
     <Compile Include="Platform.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

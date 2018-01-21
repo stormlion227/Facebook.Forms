@@ -18,6 +18,8 @@ namespace Stormlion.Facebook.Common.Droid
         public static void Init()
         {
             DependencyService.Register<FBLoginManagerImplement>();
+            DependencyService.Register<FBGraphRequestImplement>();
+
             CallBackManager = Com.Facebook.CallbackManagerFactory.Create();
         }
 
