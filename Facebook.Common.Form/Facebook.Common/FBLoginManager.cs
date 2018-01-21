@@ -21,5 +21,7 @@ namespace Stormlion.Facebook.Common
         public static void LoginWithReadPermissions(ICollection<string> permissions) => Impl.LoginWithReadPermissions(permissions);
 
         public static void LoginWithPublishPermissions(ICollection<string> permissions) => Impl.LoginWithPublishPermissions(permissions);
+
+        public static FBFacebookCallback CallBack { get; set; }
     }
 }
