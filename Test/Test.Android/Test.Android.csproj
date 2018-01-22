@@ -58,12 +58,6 @@
     <PackageReference Include="Plugin.CurrentActivity">
       <Version>1.0.1</Version>
     </PackageReference>
-    <PackageReference Include="Stormlion.Facebook.Common.Android">
-      <Version>4.28.0.3</Version>
-    </PackageReference>
-    <PackageReference Include="Stormlion.Facebook.Core.Android">
-      <Version>4.28.0.3</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.CustomTabs">
       <Version>26.1.0.1</Version>
     </PackageReference>
@@ -104,6 +98,14 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Common.Android\Binding.Facebook.Common.Android.csproj">
+      <Project>{1ec932e6-0360-43fa-ac59-4c63a99d239c}</Project>
+      <Name>Binding.Facebook.Common.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Core.Android\Binding.Facebook.Core.Android.csproj">
+      <Project>{10b245f8-12e7-4246-86e4-54c3e19aa483}</Project>
+      <Name>Binding.Facebook.Core.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Facebook.Common.Form\Facebook.Common.Android\Facebook.Common.Android.csproj">
       <Project>{342ff3e1-65fe-415d-9d3c-515597c9967e}</Project>
       <Name>Facebook.Common.Android</Name>

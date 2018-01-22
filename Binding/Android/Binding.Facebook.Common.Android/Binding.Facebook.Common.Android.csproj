@@ -101,9 +101,6 @@
     <None Include="Additions\AboutAdditions.txt" />
     <LibraryProjectZip Include="Jars\facebook-common-4.28.0.aar" />
     <None Include="packages.config" />
-    <None Include="Stormlion.Facebook.Common.Android.nuspec">
-      <SubType>Designer</SubType>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />

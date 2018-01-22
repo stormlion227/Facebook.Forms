@@ -101,7 +101,6 @@
     <None Include="Additions\AboutAdditions.txt" />
     <LibraryProjectZip Include="Jars\facebook-share-4.28.0.aar" />
     <None Include="packages.config" />
-    <None Include="Stormlion.Facebook.Share.Android.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />

@@ -56,12 +56,6 @@
     <Reference Include="Plugin.CurrentActivity, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Plugin.CurrentActivity.1.0.1\lib\MonoAndroid10\Plugin.CurrentActivity.dll</HintPath>
     </Reference>
-    <Reference Include="Stormlion.Facebook.Common.Android.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Stormlion.Facebook.Common.Android.4.28.0.3\lib\MonoAndroid\Stormlion.Facebook.Common.Android.Binding.dll</HintPath>
-    </Reference>
-    <Reference Include="Stormlion.Facebook.Core.Android.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Stormlion.Facebook.Core.Android.4.28.0.3\lib\MonoAndroid\Stormlion.Facebook.Core.Android.Binding.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -154,6 +148,14 @@
     <None Include="Resources\AboutResources.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Common.Android\Binding.Facebook.Common.Android.csproj">
+      <Project>{1ec932e6-0360-43fa-ac59-4c63a99d239c}</Project>
+      <Name>Binding.Facebook.Common.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Binding\Android\Binding.Facebook.Core.Android\Binding.Facebook.Core.Android.csproj">
+      <Project>{10b245f8-12e7-4246-86e4-54c3e19aa483}</Project>
+      <Name>Binding.Facebook.Core.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Facebook.Common\Facebook.Common.csproj">
       <Project>{386633e7-1617-49a5-b3eb-d50e888440d0}</Project>
       <Name>Facebook.Common</Name>
