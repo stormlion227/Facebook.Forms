@@ -20,6 +20,8 @@ namespace Stormlion.Facebook
 
         public Action<string> Completed { get; set; }
 
+        public Dictionary<string, string> Parameters { get; set; }
+
         public void ExecuteAsync()
         {
             DependencyService.Get<IFBGraphRequest>().ExecuteAsync(this);

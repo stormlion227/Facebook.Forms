@@ -27,8 +27,15 @@ namespace Stormlion.Facebook.iOS
 
         public void ExecuteAsync(FBGraphRequest request)
         {
+            NSDictionary parameters = null;
+
+            if (request.Parameters != null)
+            {
+                parameters = NSDictionary.FromObjectsAndKeys(request.Parameters.Values.ToArray(), request.Parameters.Keys.ToArray());
+            }
+
             //throw new NotImplementedException();
-            new FBSDKGraphRequest(request.GraphPath, null, FBSDKAccessToken.Current.TokenString, null, ConvertMethod(request.Method)).
+            new FBSDKGraphRequest(request.GraphPath, parameters, FBSDKAccessToken.Current.TokenString, null, ConvertMethod(request.Method)).
                 StartWithCompletionHandler((connection, result, error) => {
                     request.Completed?.Invoke(result.ToString());
                 });

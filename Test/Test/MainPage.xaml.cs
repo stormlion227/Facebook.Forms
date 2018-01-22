@@ -26,6 +26,10 @@ namespace Test
                     {
                         GraphPath = "me",
                         Method = FBHttpMethod.GET,
+                        Parameters = new Dictionary<string, string>
+                        {
+                            {"fields", "email, first_name, last_name, gender" }
+                        },
                         Completed = (response) =>
                         {
                             Debug.WriteLine("****************************************************************");

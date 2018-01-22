@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Android.OS;
 using Com.Facebook;
 
 namespace Stormlion.Facebook.Droid
@@ -21,10 +23,20 @@ namespace Stormlion.Facebook.Droid
 
         public void ExecuteAsync(FBGraphRequest request)
         {
+            Bundle parameters = new Bundle();
+
+            if(request.Parameters != null)
+            {
+                foreach(KeyValuePair<string, string> p in request.Parameters)
+                {
+                    parameters.PutString(p.Key, p.Value);
+                }
+            }
+
             new Com.Facebook.GraphRequest(
                 Com.Facebook.AccessToken.CurrentAccessToken,
                 request.GraphPath,
-                null,
+                parameters,
                 ConvertMethod(request.Method),
                 new FBGraphCallback
                 {

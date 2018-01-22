@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Stormlion.Facebook.Forms</id>
+    <version>0.1.0-beta</version>
+    <authors>Marko Rothstein</authors>
+    <owners>Marko Rothstein</owners>
+    <projectUrl>https://github.com/stormlion227/Facebook.Forms</projectUrl>
+    <licenseUrl>https://github.com/stormlion227/Facebook.Forms/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Facebook SDK for Xamarin.Forms. Supports Android and iOS.</description>
+    <summary>Facebook SDK for Xamarin.Forms. Supports Android and iOS.</summary>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>© StormLion 2018</copyright>
+    <tags>facebook android ios sdk</tags>
+    <dependencies>
+      <group>
+        <dependency id="Xamarin.Forms" version="2.5.0"/>
+      </group>
+      <group targetFramework="monoandroid">
+        <dependency id="Xamarin.Android.Support.v4" version="25.3.1"/>
+        <dependency id="Xamarin.Android.Support.v7.AppCompat" version="25.3.1"/>
+        <dependency id="Xamarin.Android.Support.v7.CardView" version="25.3.1"/>
+        <dependency id="Xamarin.Android.Support.CustomTabs" version="25.3.1"/>
+        <dependency id="Bolts" version="1.4.0"/>
+        <dependency id="Xamarin.Google.ZXing.Core" version="3.3.0"/>
+        <dependency id="Plugin.CurrentActivity" version="1.0.1"/>
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    
+    <file src="Facebook/Facebook/bin/Release/netstandard2.0/Stormlion.Facebook.dll" target="lib/netstandard2.0" />
+
+    <file src="Binding/Android/Binding.Facebook.Core.Android/bin/Release/Stormlion.Facebook.Core.Android.Binding.dll" target="lib/MonoAndroid" />
+    <file src="Binding/Android/Binding.Facebook.Common.Android/bin/Release/Stormlion.Facebook.Common.Android.Binding.dll" target="lib/MonoAndroid" />
+    <file src="Facebook/Facebook.Android/bin/Release/Stormlion.Facebook.Android.dll" target="lib/MonoAndroid" />
+    <file src="Facebook/Facebook/bin/Release/netstandard2.0/Stormlion.Facebook.dll" target="lib/MonoAndroid" />
+
+    <file src="Binding/iOS/Binding.FBSDK.iOS/bin/Release/Stormlion.Facebook.iOS.Binding.dll" target="lib/Xamarin.iOS10" />
+    <file src="Facebook/Facebook.iOS/bin/Release/Stormlion.Facebook.iOS.dll" target="lib/Xamarin.iOS10" />
+    <file src="Facebook/Facebook/bin/Release/netstandard2.0/Stormlion.Facebook.dll" target="lib/Xamarin.iOS10" />
+  </files>
+</package>
