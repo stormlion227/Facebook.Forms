@@ -32,7 +32,6 @@ namespace Test
                         },
                         Completed = (response) =>
                         {
-                            Debug.WriteLine("****************************************************************");
                             Debug.WriteLine(response);
                         }
                     }.ExecuteAsync();
@@ -47,7 +46,7 @@ namespace Test
                 }
             };
 
-            FBLoginManager.LoginWithReadPermissions(new List<string> { "email" });
+            FBLoginManager.LoginWithReadPermissions(new List<string> { "public_profile" });
         }
 	}
 }
