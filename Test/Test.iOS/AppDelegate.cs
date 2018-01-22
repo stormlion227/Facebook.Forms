@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Facebook.Common.iOS;
 using Foundation;
 using UIKit;
+using Stormlion.Facebook.iOS.Binding;
 
 namespace Test.iOS
 {
@@ -25,7 +26,18 @@ namespace Test.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+            Platform.Init();
+
+            FBSDKApplicationDelegate.Instance.DidFinishLaunching(app, options);
+
             return base.FinishedLaunching(app, options);
+        }
+
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            return FBSDKApplicationDelegate.Instance.OpenURL(app, url, options);
+
+            //return base.OpenUrl(app, url, options);
         }
     }
 }

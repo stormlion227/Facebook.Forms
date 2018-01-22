@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Test</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Test</string>
+	<string>com.stormlion.fbsdktest</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleIconFiles</key>
@@ -50,5 +50,27 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>Test</string>
+
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fb1929161387412785</string>
+      </array>
+    </dict>
+  </array>
+  <key>FacebookAppID</key>
+  <string>1929161387412785</string>
+  <key>FacebookDisplayName</key>
+  <string>SDK Test</string>
+
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>fbapi</string>
+    <string>fb-messenger-share-api</string>
+    <string>fbauth2</string>
+    <string>fbshareextension</string>
+  </array>
 </dict>
 </plist>
