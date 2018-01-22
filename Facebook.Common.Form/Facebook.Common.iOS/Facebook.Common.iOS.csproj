@@ -55,6 +55,7 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FBAccessTokenImplement.cs" />
     <Compile Include="FBGraphRequestImplement.cs" />
     <Compile Include="FBLoginManagerImplement.cs" />
     <Compile Include="Platform.cs" />

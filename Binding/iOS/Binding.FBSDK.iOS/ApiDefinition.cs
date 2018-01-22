@@ -99,11 +99,11 @@ namespace Stormlion.Facebook.iOS.Binding
         bool HasGranted(string permission);
 
 
-        [Export("permissions")]
+        [Export("permissions", ArgumentSemantic.Copy)]
         NSSet Permissions { get; }
 
-        [Export("declinedPermissions")]
-        NSSet DeclinedPermission { get; }
+        [Export("declinedPermissions", ArgumentSemantic.Copy)]
+        NSSet DeclinedPermissions { get; }
 
         [Export("tokenString")]
         string TokenString { get; }
