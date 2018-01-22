@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace Stormlion.Facebook.Common.Droid
+namespace Stormlion.Facebook.Droid
 {
     public class FBAccessTokenImplement : IFBAccessToken
     {

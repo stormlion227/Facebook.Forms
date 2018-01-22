@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Stormlion.Facebook.Common
+namespace Stormlion.Facebook
 {
     public interface IFBGraphRequest
     {

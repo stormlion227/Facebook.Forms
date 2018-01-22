@@ -7,10 +7,10 @@ using Foundation;
 using UIKit;
 
 using Stormlion.Facebook.iOS.Binding;
-using Stormlion.Facebook.Common;
+using Stormlion.Facebook;
 using System.Diagnostics;
 
-namespace Facebook.Common.iOS
+namespace Stormlion.Facebook.iOS
 {
     public class FBLoginManagerImplement : IFBLoginManager
     {

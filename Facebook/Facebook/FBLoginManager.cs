@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace Stormlion.Facebook.Common
+namespace Stormlion.Facebook
 {
     public interface IFBLoginManager
     {

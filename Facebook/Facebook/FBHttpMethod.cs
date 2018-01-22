@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Stormlion.Facebook.Common
+namespace Stormlion.Facebook
 {
     public enum FBHttpMethod
     {

@@ -4,7 +4,7 @@ using Plugin.CurrentActivity;
 using System;
 using System.Collections.Generic;
 
-namespace Stormlion.Facebook.Common.Droid
+namespace Stormlion.Facebook.Droid
 {
     public class FBLoginManagerImplement : IFBLoginManager
     {
@@ -15,7 +15,7 @@ namespace Stormlion.Facebook.Common.Droid
             if (FBLoginManager.CallBack != null)
             {
                 Com.Facebook.Login.LoginManager.Instance.RegisterCallback(
-                    Stormlion.Facebook.Common.Droid.Platform.CallBackManager,
+                    Stormlion.Facebook.Droid.Platform.CallBackManager,
                     callback);
             }
 
@@ -27,7 +27,7 @@ namespace Stormlion.Facebook.Common.Droid
             if (FBLoginManager.CallBack != null)
             {
                 Com.Facebook.Login.LoginManager.Instance.RegisterCallback(
-                    Stormlion.Facebook.Common.Droid.Platform.CallBackManager,
+                    Stormlion.Facebook.Droid.Platform.CallBackManager,
                     callback);
             }
 

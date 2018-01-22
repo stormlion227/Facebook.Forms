@@ -9,9 +9,9 @@
     <ProjectGuid>{66865D67-41F4-436E-AB32-4239030D91FB}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>Facebook.Common.iOS</RootNamespace>
+    <RootNamespace>Stormlion.Facebook.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Facebook.Common.iOS</AssemblyName>
+    <AssemblyName>Stormlion.Facebook.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -69,9 +69,9 @@
       <Project>{72b0e51e-9f9a-4a9a-b512-f0c1d0431525}</Project>
       <Name>Binding.FBSDK.iOS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Facebook.Common\Facebook.Common.csproj">
-      <Project>{386633e7-1617-49a5-b3eb-d50e888440d0}</Project>
-      <Name>Facebook.Common</Name>
+    <ProjectReference Include="..\Facebook\Facebook.csproj">
+      <Project>{c172080b-d0d4-4318-9909-d4a0780ed8bc}</Project>
+      <Name>Facebook</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -18,7 +18,7 @@ namespace Test.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            Stormlion.Facebook.Common.Droid.Platform.Init();
+            Stormlion.Facebook.Droid.Platform.Init();
 
             base.OnCreate(bundle);
 
@@ -28,7 +28,7 @@ namespace Test.Droid
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {
-            Stormlion.Facebook.Common.Droid.Platform.OnActivityResult(requestCode, resultCode, data);
+            Stormlion.Facebook.Droid.Platform.OnActivityResult(requestCode, resultCode, data);
             base.OnActivityResult(requestCode, resultCode, data);
         }
     }

@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 
 using Foundation;
-using Stormlion.Facebook.Common;
 using UIKit;
 using Stormlion.Facebook.iOS.Binding;
 
-namespace Facebook.Common.iOS
+namespace Stormlion.Facebook.iOS
 {
     public class FBAccessTokenImplement : IFBAccessToken
     {

@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Com.Facebook;
 
-namespace Stormlion.Facebook.Common.Droid
+namespace Stormlion.Facebook.Droid
 {
     public class FBGraphRequestImplement : IFBGraphRequest
     {

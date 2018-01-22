@@ -106,13 +106,13 @@
       <Project>{10b245f8-12e7-4246-86e4-54c3e19aa483}</Project>
       <Name>Binding.Facebook.Core.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Facebook.Common.Form\Facebook.Common.Android\Facebook.Common.Android.csproj">
+    <ProjectReference Include="..\..\Facebook\Facebook.Android\Facebook.Android.csproj">
       <Project>{342ff3e1-65fe-415d-9d3c-515597c9967e}</Project>
-      <Name>Facebook.Common.Android</Name>
+      <Name>Facebook.Android</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Facebook.Common.Form\Facebook.Common\Facebook.Common.csproj">
-      <Project>{386633e7-1617-49a5-b3eb-d50e888440d0}</Project>
-      <Name>Facebook.Common</Name>
+    <ProjectReference Include="..\..\Facebook\Facebook\Facebook.csproj">
+      <Project>{c172080b-d0d4-4318-9909-d4a0780ed8bc}</Project>
+      <Name>Facebook</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{6839C0C0-CBF4-4686-A884-FCBE0161C37A}</Project>

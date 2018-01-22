@@ -129,15 +129,15 @@
       <Project>{72b0e51e-9f9a-4a9a-b512-f0c1d0431525}</Project>
       <Name>Binding.FBSDK.iOS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Facebook.Common.Form\Facebook.Common.iOS\Facebook.Common.iOS.csproj">
+    <ProjectReference Include="..\..\Facebook\Facebook.iOS\Facebook.iOS.csproj">
       <Project>{66865d67-41f4-436e-ab32-4239030d91fb}</Project>
-      <Name>Facebook.Common.iOS</Name>
+      <Name>Facebook.iOS</Name>
       <IsAppExtension>false</IsAppExtension>
       <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
-    <ProjectReference Include="..\..\Facebook.Common.Form\Facebook.Common\Facebook.Common.csproj">
-      <Project>{386633e7-1617-49a5-b3eb-d50e888440d0}</Project>
-      <Name>Facebook.Common</Name>
+    <ProjectReference Include="..\..\Facebook\Facebook\Facebook.csproj">
+      <Project>{c172080b-d0d4-4318-9909-d4a0780ed8bc}</Project>
+      <Name>Facebook</Name>
     </ProjectReference>
     <ProjectReference Include="..\Test\Test.csproj">
       <Project>{6839C0C0-CBF4-4686-A884-FCBE0161C37A}</Project>

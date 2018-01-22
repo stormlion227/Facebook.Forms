@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 using Xamarin.Forms;
 
-namespace Stormlion.Facebook.Common.Droid
+namespace Stormlion.Facebook.Droid
 {
     public class Platform
     {

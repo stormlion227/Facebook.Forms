@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Stormlion.Facebook.Common</AssemblyName>
-    <RootNamespace>Stormlion.Facebook.Common</RootNamespace>
+    <AssemblyName>Stormlion.Facebook</AssemblyName>
+    <RootNamespace>Stormlion.Facebook</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
