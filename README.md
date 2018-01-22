@@ -1,4 +1,4 @@
-# ImageCropper.Forms
+# Facebook.Forms
 
 Facebook SDK for Xamarin.Forms.
 
