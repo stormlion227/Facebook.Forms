@@ -14,6 +14,7 @@ Supports Android and iOS.
 ## Setup
 
 * Install the [nuget package](https://www.nuget.org/packages/Stormlion.Facebook.Forms/) in portable and all platform specific projects.
+* Setup all of [facebook requirments](https://developers.facebook.com/).
 
 ### Android
 
