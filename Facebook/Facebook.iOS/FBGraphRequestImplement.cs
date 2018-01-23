@@ -37,7 +37,8 @@ namespace Stormlion.Facebook.iOS
             //throw new NotImplementedException();
             new FBSDKGraphRequest(request.GraphPath, parameters, FBSDKAccessToken.Current.TokenString, null, ConvertMethod(request.Method)).
                 StartWithCompletionHandler((connection, result, error) => {
-                    request.Completed?.Invoke(result.ToString());
+                    NSError errorJson;
+                    request.Completed?.Invoke(NSJsonSerialization.Serialize(result, NSJsonWritingOptions.PrettyPrinted, out errorJson).ToString());
                 });
 
         }
