@@ -1,6 +1,6 @@
-﻿using Com.Facebook;
+﻿using Android.App;
+using Com.Facebook;
 using Java.Lang;
-using Plugin.CurrentActivity;
 using System;
 using System.Collections.Generic;
 
@@ -19,7 +19,7 @@ namespace Stormlion.Facebook.Droid
                     callback);
             }
 
-            Com.Facebook.Login.LoginManager.Instance.LogInWithPublishPermissions(CrossCurrentActivity.Current.Activity, permissions);
+            Com.Facebook.Login.LoginManager.Instance.LogInWithPublishPermissions((Activity)Platform.Context, permissions);
         }
 
         public void LoginWithReadPermissions(ICollection<string> permissions)
@@ -31,7 +31,7 @@ namespace Stormlion.Facebook.Droid
                     callback);
             }
 
-            Com.Facebook.Login.LoginManager.Instance.LogInWithReadPermissions(CrossCurrentActivity.Current.Activity, permissions);
+            Com.Facebook.Login.LoginManager.Instance.LogInWithReadPermissions((Activity)Platform.Context, permissions);
         }
 
         public void LogOut()

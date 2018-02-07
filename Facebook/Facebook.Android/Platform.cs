@@ -15,8 +15,12 @@ namespace Stormlion.Facebook.Droid
 {
     public class Platform
     {
-        public static void Init()
+        public static Context Context { get; set; }
+
+        public static void Init(Context context)
         {
+            Context = context;
+
             DependencyService.Register<FBLoginManagerImplement>();
             DependencyService.Register<FBGraphRequestImplement>();
 

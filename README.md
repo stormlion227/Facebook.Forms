@@ -14,11 +14,8 @@ Supports Android and iOS.
 ## Setup
 
 * Install the [nuget package](https://www.nuget.org/packages/Stormlion.Facebook.Forms/) in portable and all platform specific projects.
-* Setup all of [facebook requirments](https://developers.facebook.com/).
 
 ### Android
-
-This plugin uses the [CurrentActivityPlugin](https://github.com/jamesmontemagno/CurrentActivityPlugin). Be sure to complete the full setup this plugin. Please fully read through the [CurrentActivityPlugin description](https://montemagno.com/access-the-current-android-activity-from-anywhere/).
 
 In MainActivity.cs file
 
@@ -28,7 +25,7 @@ In MainActivity.cs file
         TabLayoutResource = Resource.Layout.Tabbar;
         ToolbarResource = Resource.Layout.Toolbar;
 
-        Stormlion.Facebook.Droid.Platform.Init();
+        Stormlion.Facebook.Droid.Platform.Init(this);
 
         base.OnCreate(bundle);
 

@@ -18,7 +18,7 @@ namespace Test.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
-            Stormlion.Facebook.Droid.Platform.Init();
+            Stormlion.Facebook.Droid.Platform.Init(this);
 
             base.OnCreate(bundle);
 
