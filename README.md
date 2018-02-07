@@ -50,14 +50,14 @@ In AppDelegate.cs file
         global::Xamarin.Forms.Forms.Init();
         LoadApplication(new App());
 
-        Platform.FinishedLaunching(app, options);
+        Stormlion.Facebook.iOS.Platform.FinishedLaunching(app, options);
 
         return base.FinishedLaunching(app, options);
     }
 
     public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
     {
-        Platform.OpenUrl(app, url, options);
+        Stormlion.Facebook.iOS.Platform.OpenUrl(app, url, options);
 
         return base.OpenUrl(app, url, options);
     }
