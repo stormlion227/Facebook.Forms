@@ -20,7 +20,7 @@ Supports Android and iOS.
 
 In MainActivity.cs file
 
-```
+```cs
     protected override void OnCreate(Bundle bundle)
     {
         TabLayoutResource = Resource.Layout.Tabbar;
@@ -45,7 +45,7 @@ In MainActivity.cs file
 
 In AppDelegate.cs file
 
-```
+```cs
     public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     {
         global::Xamarin.Forms.Forms.Init();
@@ -65,7 +65,7 @@ In AppDelegate.cs file
 ```
 ## Usage
 
-```
+```cs
     FBLoginManager.CallBack = new FBFacebookCallback
     {
         Success = () =>
