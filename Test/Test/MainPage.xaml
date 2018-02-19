@@ -1,14 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="Test.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Test"
-             x:Class="Test.MainPage">
+             xmlns:local="clr-namespace:Test">
 
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Button Text="UI"
-                    Clicked="OnLoginClicked"
-                    />
+            <Button Clicked="OnLoginClicked" Text="UI" />
         </StackLayout>
     </ContentPage.Content>
 
